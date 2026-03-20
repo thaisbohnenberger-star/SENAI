@@ -1,10 +1,9 @@
 nome = input("Digite seu nome: ")
 idade = int(input("Digite sua idade: "))
 
-if idade <=0:
-    print("Inválido, digite novamente: ")
-elif idade >=116:
-    print("Inválido, digite novamente: ")
+if idade > 120:
+    print("Idade inválida! por favor, digite um valor menor ou igual a 120.")
 else:
-    dias = (idade * 365)
-    print(nome,"você já viveu", dias,"dias")
+
+    dias_de_vida = idade * 365
+    print(f"Olá {nome}, voce já viveu cerca de: {dias_de_vida}")
