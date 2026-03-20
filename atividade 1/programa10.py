@@ -2,7 +2,7 @@ nome = input("Digite seu nome: ")
 idade = int(input("Digite sua idade: "))
 while True: 
     if idade > 120 or idade <0:
-        print("Idade inválida! por favor, digite um valor maior que 0 menor que 120.")
+        print("Idade inválida! Por favor, digite um valor maior que 0 menor que 120.")
         idade = int(input("Digite sua idade: "))
     else:
         break
