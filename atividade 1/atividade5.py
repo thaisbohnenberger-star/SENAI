@@ -1,10 +1,16 @@
-dia = int(input("Digite o dia da entrega: "))
-mes = int(input("Digite o mês da entrega: "))
-if dia < 1 or dia > 30 or mes < 1 or mes > 12:
-    print("Data inválida! Considere meses de 1 a 12 e dias de 1 a 30.")
-else:
-    total_dias = 0
-    for i in range(1, mes):
-        total_dias += 30
-    total_dias += dia
-    print(f"Total de dias decorridos desde o início do ano: {total_dias}")
+# Solicita ao usuário o dia e o mês da data
+dia = int(input("Digite o dia: "))
+
+# Enquanto o dia estiver fora do intervalo de 1 a 30, solicita novamente
+while dia < 1 or dia > 30:
+    print("Dia inválido. O dia deve estar entre 1 e 30.")
+    dia = int(input("Digite o dia novamente: "))
+mes = int(input("Digite o mês: "))
+# Verifica se o mês fornecido é válido
+while mes < 1 or mes > 12:
+    print("Mês inválido. O mês deve estar entre 1 e 12.")
+    mes = int(input("Digite o mês: "))
+
+# Calcula quantos dias se passaram desde o início do ano
+dias_passados = (mes - 1) * 30 + dia
+print("Desde o início do ano, se passaram", dias_passados, "dias.")
