@@ -1,11 +1,12 @@
-import math
+distancia = 0
+x1 = float(input("Digite sua coordenada x do primeiro ponto: "))
+y1 = float(input("Digite sua coordenada x do segundo ponto: "))
+x2 = float(input("Digite sua coordenada x do terceiro ponto: "))
+y2 = float(input("Digite sua primeira coordenada x do quarto ponto: "))
 
-x1 = float(input("Digite x1: "))
-y1 = float(input("Digite y1: "))
-x2 = float(input("Digite x2: "))
-y2 = float(input("Digite y2: "))
+diferenca_x = x2 - x1
+diferenca_y = y2 - y1
 
-distancia = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+distancia ((diferenca_x ** 2) + (diferenca_y ** 2)) ** 0.5
 
-
-print(f"Distância entre os pontos: {distancia:.2f}")
+print("A distancia entre os pontos é: ", format(x1, x2, y1, y2, distancia))
