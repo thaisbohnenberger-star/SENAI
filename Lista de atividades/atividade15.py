@@ -1,7 +1,12 @@
-quant_sanduiche= int(input("Digite a quantidade de sanduíches para fazer: "))
+conta = float(input("Digite o valor total da conta: "))
 
-presunto_queijo = quant_sanduiche * 50
-hamburguer = quant_sanduiche * 100
+parte = conta / 3
 
-print("São necessário comprar",presunto_queijo,"gramas de presunto e queijo")
-print("São necessário comprar",hamburguer,"gramas de hamburguer")
+carlos = int(parte)
+andre = int(parte)
+
+felipe = round(conta - carlos - andre, 2)
+
+print("Carlos paga: R$", carlos)
+print("André paga: R$", andre)
+print("Felipe paga: R$", felipe)

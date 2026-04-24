@@ -1,12 +1,6 @@
-conta = float(input("Digite o valor total da conta: "))
+pizza = int(input("Digite o valor do raio da pizza:"))
 
-parte = conta / 3
+area = pizza * 2 * 3.14
 
-carlos = int(parte)
-andre = int(parte)
-
-felipe = round(conta - carlos - andre, 2)
-
-print("Carlos paga: R$", carlos)
-print("André paga: R$", andre)
-print("Felipe paga: R$", felipe)
+print("A área da sua pizza é de: ",area)
+#Para calcular a área, o raio precisa estar ao quadrado, por isso * 2 * 3.14

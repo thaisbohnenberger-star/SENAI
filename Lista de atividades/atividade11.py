@@ -1,6 +1,12 @@
-salario = int(input("Escreva seu salário bruto: "))
+dias = int(input("Digite a quantidade de dias: "))
 
-aumento = salario + (salario * (15 / 100))
-imposto = aumento - (aumento * (8 / 100))
+anos = dias // 360
+resto = dias % 360
 
-print("Seu salário final deu: R$",imposto)
+meses = resto // 30
+dias_restantes = resto % 30
+
+print("Tempo sem acidentes:")
+print(anos, "ano(s)")
+print(meses, "mês(es)")
+print(dias_restantes, "dia(s)")

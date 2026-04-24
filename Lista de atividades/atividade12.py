@@ -1,9 +1,6 @@
-numero = int(input("Digite um número inteiro: "))
+salario = int(input("Escreva seu salário bruto: "))
 
-centena = numero // 100
-dezena = (numero % 100) // 10
-unidade = numero % 10
+aumento = salario + (salario * (15 / 100))
+imposto = aumento - (aumento * (8 / 100))
 
-print("CENTENA =", centena)
-print("DEZENA =", dezena)
-print("UNIDADE =", unidade)
+print("Seu salário final deu: R$",imposto)

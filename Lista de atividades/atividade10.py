@@ -1,12 +1,12 @@
-dias = int(input("Digite a quantidade de dias: "))
+distancia = 0
+x1 = float(input("Digite sua coordenada x do primeiro ponto: "))
+y1 = float(input("Digite sua coordenada x do segundo ponto: "))
+x2 = float(input("Digite sua coordenada x do terceiro ponto: "))
+y2 = float(input("Digite sua primeira coordenada x do quarto ponto: "))
 
-anos = dias // 360
-resto = dias % 360
+diferenca_x = x2 - x1
+diferenca_y = y2 - y1
 
-meses = resto // 30
-dias_restantes = resto % 30
+distancia ((diferenca_x ** 2) + (diferenca_y ** 2)) ** 0.5
 
-print("Tempo sem acidentes:")
-print(anos, "ano(s)")
-print(meses, "mês(es)")
-print(dias_restantes, "dia(s)")
+print("A distancia entre os pontos é: ", format(x1, x2, y1, y2, distancia))
