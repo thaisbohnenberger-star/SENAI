@@ -1,5 +1,10 @@
-largura = float(input("Digite a largura do terreno em metros: "))
-altura = float(input("Digite a altura do terreno em metros: "))
-
-area = altura * largura
-print("A área do meu terreno é: ", area)
+nome = input("Digite seu nome: ")
+idade = int(input("Digite sua idade: "))
+while True: 
+    if idade > 120 or idade <0:
+        print("Idade inválida! Por favor, digite um valor maior que 0 menor que 120.")
+        idade = int(input("Digite sua idade: "))
+    else:
+        break
+dias_de_vida = idade * 365
+print(f"Olá {nome}, voce já viveu cerca de: {dias_de_vida}")
