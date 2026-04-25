@@ -10,3 +10,5 @@ diferenca_y = y2 - y1
 distancia ((diferenca_x ** 2) + (diferenca_y ** 2)) ** 0.5
 
 print("A distancia entre os pontos é: ", format(x1, x2, y1, y2, distancia))
+#Construa um algoritmo para calcular a distância entre dois pontos do plano cartesiano. 
+# Cada ponto é um par ordenado (x,y). 
