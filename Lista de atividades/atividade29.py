@@ -1,0 +1,7 @@
+preco_original = float(input("Digite o valor do produto: R$ "))
+novo_preco = preco_original * 0.90
+
+print(f"O preço com 10% de desconto é: R$ {novo_preco:.2f}")
+
+#Faça um algoritmo que receba o preço de um produto, calcule e mostre o novo preço, sabendo-se que 
+#este sofreu um desconto de 10%.
