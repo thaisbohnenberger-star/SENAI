@@ -7,8 +7,8 @@ temp_atual = int(input("\nDigite sua temperatura atual: "))
 temp_desejada = int(input("Digite qual temperatura você deseja: "))
 
 # Verificação
-if temp_desejada <= temp_atual:
-    print("Erro: a temperatura desejada deve ser maior que a atual.")
+if temp_desejada <= temp_atual or temp_atual <= 20:
+    print("Erro: a temperatura desejada deve ser maior que a atual e menor que 38.")
 else:
     temperatura = temp_atual
 
